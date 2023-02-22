@@ -27,6 +27,8 @@ const loadNews = (id)=>{
     .then(data => displayNews(data.data))
 }
 
+loadNews('01')
+
 const newsContainer = document.getElementById('news-container');
 
 const displayNews = (news)=>{
