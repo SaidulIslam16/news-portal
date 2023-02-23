@@ -11,7 +11,7 @@ const loadModal = (id)=>{
 const displayModal =(post)=>{
     console.log(post);
     mainModal.innerHTML = `
-    <div class="bg-black bg-opacity-50 flex justify-center absolute inset-0 w-full p-4 overflow-x-hidden">
+    <div class="bg-black bg-opacity-50 flex justify-center absolute inset-0 w-full p-4  overflow-x-hidden">
     <div class=" max-w-3xl">
         <!-- Modal content -->
         <div class=" bg-white rounded-lg shadow">
