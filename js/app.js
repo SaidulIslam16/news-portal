@@ -16,6 +16,10 @@ const displayCategories = (categories) => {
 }
 loadCategories();
 
+// Loader Section
+
+const spinnerSection = document.getElementById('spinner');
+
 // load news from dynamic category id
 
 const loadNews = (id) => {
@@ -25,6 +29,9 @@ const loadNews = (id) => {
     fetch(url)
         .then(res => res.json())
         .then(data => displayNews(data.data))
+    
+    spinnerSection.classList.remove('hidden')
+    
 }
 
 loadNews('08')
@@ -96,4 +103,5 @@ const displayNews = (news) => {
         newsContainer.appendChild(div);
 
     })
+    spinnerSection.classList.add('hidden')
 }
