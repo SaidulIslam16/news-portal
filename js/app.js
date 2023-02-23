@@ -61,11 +61,11 @@ const displayNews = (news) => {
         div.classList.add('my-4')
         div.innerHTML = `
         <div>
-        <div class="bg-white p-5 lg:flex gap-x-6 rounded-2xl lg:items-center">
-        <div class="flex-initial ">
-            <img src="${data.thumbnail_url}" alt="">
-        </div>
-        <div class="flex-1">
+            <div class="bg-white p-5 lg:flex gap-x-6 rounded-2xl lg:items-center">
+                <div class="flex-initial ">
+                    <img src="${data.thumbnail_url}" alt="">
+                </div>
+            <div class="flex-1">
             <h2 class="text-2xl font-bold mt-2">${data.title}</h2>
             <p class="my-6 h-24 text-ellipsis overflow-hidden ">${newsDetials}</p>
             <div class="flex justify-between items-center">

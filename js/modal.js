@@ -11,7 +11,7 @@ const loadModal = (id)=>{
 const displayModal =(post)=>{
     console.log(post);
     mainModal.innerHTML = `
-    <div class="bg-black bg-opacity-50 flex justify-center absolute inset-0 w-full p-4  overflow-x-hidden">
+    <div class="bg-black bg-opacity-50 flex justify-center fixed inset-0 p-4 overflow-auto">
     <div class=" max-w-3xl">
         <!-- Modal content -->
         <div class=" bg-white rounded-lg shadow">
@@ -28,7 +28,7 @@ const displayModal =(post)=>{
             <!-- Modal body -->
             <div class="p-6 space-y-6">
                 <!-- Author Info -->
-                <div class="flex justify-between items-center">
+                <div class="flex justify-between">
                     <div>
                         <a href="" class="flex items-center	">
                             <div class="mr-2">
