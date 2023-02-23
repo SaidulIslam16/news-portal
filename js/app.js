@@ -85,7 +85,7 @@ const displayNews = (news) => {
                     <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
                 <div>
-                    <button onclick = "loadModal()"><i class="fa-sharp fa-solid fa-arrow-right-long"></i></button>
+                    <button onclick = "loadModal('${data._id}')"><i class="fa-sharp fa-solid fa-arrow-right-long"></i></button>
                 </div>
             </div>
         </div>
